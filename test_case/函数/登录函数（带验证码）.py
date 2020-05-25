@@ -1,3 +1,4 @@
+# coding=utf-8
 # 定义生产验证码函数
 import random
 
