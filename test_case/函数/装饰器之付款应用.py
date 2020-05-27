@@ -43,3 +43,5 @@ def Pay(money):
 
 
 Pay(1000)
+
+Pay(2000)
