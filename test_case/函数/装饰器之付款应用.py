@@ -23,7 +23,7 @@ def login_require(func):
         global is_login
         print('----付款----')
         # 验证用户是否登录
-        if is_login:
+        if is_login:  # 相当于is_login = True
             func(*args, **kwargs)
         else:
             # 跳转到登录页面
@@ -44,4 +44,4 @@ def Pay(money):
 
 Pay(1000)
 
-Pay(2000)
+#Pay(2000)
