@@ -9,7 +9,7 @@ container = stream.read()   -----读取流中的内容
 read（）读取所有内容
 readline() 读取一行内容
 readlines() 读取所有内容，并且将内容放到列表中心
-readable() 判断文档是否可读
+readable() 判断文档是否可读 ，返回True或False
 '''
 
 stream = open(r'D:\test\test.txt')
