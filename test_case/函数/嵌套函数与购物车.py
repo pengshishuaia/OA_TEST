@@ -38,3 +38,5 @@ def add_shopping(trade):
 is_login = login()
 
 add_shopping("阿玛尼")
+
+
