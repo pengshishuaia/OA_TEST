@@ -52,4 +52,6 @@ print(s)  # 姓名:于新宇，年龄:18，分数:59
 # s.setAge(61)
 # print(s)
 print(s.getAge())
+print(dir(Students))
+print(dir(s))
 
