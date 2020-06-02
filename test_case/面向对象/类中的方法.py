@@ -13,22 +13,26 @@ class Phone():
 
     # Phone类里面的方法：call
     def call(self):
-        print('--------',self)
+        print('--------', self)
         print('正在打电话中....')
         print('正在访问{}'.format(self.note))
+        print('您的电话录{}'.format(self.call_note))
 
 
 phone1 = Phone()
 phone1.note = 'phone1的记事本'
+phone1.call_note = '电话簿'
+
 print(phone1)
 print(phone1.brand)
+print(phone1.call_note)
+
 phone1.call()
 
-print('*'*30)
+print('*' * 30)
 
 phone2 = Phone()
 phone2.note = 'phone2的记事本'
 print(phone2)
 print(phone2.brand)
 phone2.call()
-
