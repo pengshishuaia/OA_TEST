@@ -1,5 +1,14 @@
 '''
 has a 的实例讲解
+知识点：
+1，has a
+    一个类中使用另外一中自定义类型
+    student 使用compute和books类
+2，类型
+    系统类型：1，int str float 2，dict list tuple set
+    自定义类型:算是自定义的类，都可以将其当成一种类型
+    s = student（）
+    s是student类型的对象
 '''
 
 
