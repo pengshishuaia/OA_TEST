@@ -40,12 +40,15 @@ class Student:
         self.name = name
         self.computer = computer
         self.books = []
-        self.books.append(book)
+        self.books.append(book)  # books = ['盗墓笔记---南派三叔---10']
 
-    def borrow_book(self, book):
+    def borrow_book(self, book):   # book = book2 鬼吹灯---天下霸唱---8
+        # print('books的值为',self.books)
         for book1 in self.books:
             print('book1的值为:',book1)
             if book1.bname == book.bname:
+                print(book1.bname)
+                print(book.bname)
                 print('已经借过了')
                 break
         else:
@@ -62,10 +65,15 @@ class Student:
 
 computer = Computer('苹果', '深灰色')
 book = Books('盗墓笔记', '南派三叔', 10)
+
+print(book)   # 盗墓笔记---南派三叔---10
 stu = Student('彭帅', computer, book)
+#stu = Student('彭帅', computer, book2)
 print(stu)
-stu.show_book()
+#stu.show_book()
+
 book2 = Books('鬼吹灯', '天下霸唱', 8)
+# print(book2)
 stu.borrow_book(book2)
 print('*'*30)
 stu.show_book()
