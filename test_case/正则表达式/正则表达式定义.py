@@ -1,10 +1,11 @@
 '''
 分组：()
 re 模块
-match
-search
-findall
+match 从头开始查找
+search  查找一次
+findall  查找所有
 sub(正则表单时，新内容，str字符串)  替换
+split 切割
 '''
 import re
 #
