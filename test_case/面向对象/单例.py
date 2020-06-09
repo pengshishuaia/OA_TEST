@@ -26,11 +26,13 @@ def singleton(cls):
     instance.__call__ = lambda: instance
     return instance
 
+
 @singleton
 class Student():
     def __init__(self):
         name = 'jack'
         age = 18
+
 
 stu1 = Student
 stu2 = Student
