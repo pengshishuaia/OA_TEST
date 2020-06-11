@@ -1,13 +1,15 @@
 # 进程间的通信
-from multiprocessing import Process,Queue
+from multiprocessing import Process, Queue
 from time import sleep
 
+
 def download(q):
-    images = ['girl.jpg','boy.jpg','man.jpg']
+    images = ['girl.jpg', 'boy.jpg', 'man.jpg']
     for image in images:
         print('正在下载:{}'.format(image))
         sleep(0.5)
         q.put(image)
+
 
 def getfile(q):
     while True:
@@ -18,14 +20,15 @@ def getfile(q):
             print('全部保存完毕！')
             break
 
+
 if __name__ == '__main__':
-    q = Queue(5) # 创建队列
-    p1 = Process(target=download,args=(q,))
-    p2 = Process(target=getfile,args=(q,))
+    q = Queue(5)  # 创建队列
+    p1 = Process(target=download, args=(q,))
+    p2 = Process(target=getfile, args=(q,))
 
     p1.start()
     p1.join()
     p2.start()
     p2.join()
 
-    print('*'*30)
+    print('*' * 30)

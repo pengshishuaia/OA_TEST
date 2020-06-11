@@ -2,7 +2,7 @@ from multiprocessing import Process
 from time import sleep
 import os
 
-m = 1  # 可变类型
+m = 0  # 可变类型
 list1 = []  # 不可变类型
 
 
@@ -24,7 +24,7 @@ def task2(s):
         print('正在执行任务二.........M的值为', m)
 
 
-number = 1
+number = 0
 if __name__ == '__main__':
     print(os.getpid())
     # 子进程
@@ -40,5 +40,4 @@ if __name__ == '__main__':
         # list1.append(str(m) + 'main')
         print('---------M的值为:', m)
 
-    print('----------------------------------------------')
-    print('**********************************************')
+
